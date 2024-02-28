@@ -9,6 +9,8 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: center;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -53,7 +55,6 @@ ol {
   gap: 30px;
   width: 1140px;
   margin: 0 auto;
-  padding: 133px 0px;
 }
 
 .result {
@@ -153,13 +154,13 @@ ol {
 }
 
 .search-form__submit-button {
-  margin-block-start: auto;
   width: 194px;
+  margin-block-start: auto;
 }
 
 .more-button {
-  inline-size: 100%;
   margin-block-start: 30px;
+  inline-size: 100%;
 }
 
 .content__details {
@@ -195,10 +196,10 @@ ol {
 }
 
 .content__card-link {
-  color: #fff;
-  text-decoration: none;
   display: block;
   margin: 2px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .content__card-link:focus {
@@ -215,7 +216,7 @@ ol {
 
 .content__card-link:active {
   color: #545050;
-  
+
 }
 
 .content__card-link_current {
@@ -275,8 +276,8 @@ input:focus-visible {
 }
 
 .button:active {
-  background: #545050;
   text-decoration: none;
+  background: #545050;
 }
 
 .search-form__checkbox-list .search-form__label:hover {
