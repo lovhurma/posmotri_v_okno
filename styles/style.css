@@ -189,7 +189,7 @@ ol {
   position: relative;
   overflow-x: auto;
   overflow-y: auto;
-  block-size: 534px;
+  block-size: 298px;
 }
 
 .content__list-item:not(:first-child) {
