@@ -53,13 +53,13 @@ ol {
   display: flex;
   align-items: flex-end;
   gap: 30px;
-  width: 1140px;
+  inline-size: 1140px;
+  block-size: 534px;
   margin: 0 auto;
 }
 
 .result {
   padding-block-start: 78px;
-  block-size: 534px;
 }
 
 .result__video-container {
@@ -90,15 +90,16 @@ ol {
   display: flex;
   gap: 5px;
   inline-size: fit-content;
+  align-items: center;
 }
 
 .search-form__textfield {
-  border-top: #ffffffb3 solid 1px;
+  border-top: currentColor solid 1px;
   border-right: transparent solid 1px;
-  border-bottom: #ffffffb3 solid 1px;
+  border-bottom: currentColor solid 1px;
   border-left: transparent solid 1px;
-  color: rgba(255, 255, 255, 0.7);
-  font-family: Fira Sans Condensed;
+  color: rgba(255, 255, 255);
+  font-family: Fira Sans Condensed, Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
@@ -142,10 +143,10 @@ ol {
   justify-content: center;
   align-items: center;
   height: 34px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid currentColor;
   padding: 0px;
   color: #FFFFFF;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
@@ -168,12 +169,12 @@ ol {
   flex-direction: column;
   gap: 26px;
   inline-size: 399px;
-  block-size: 534px;
+  block-size: 100%;
 
 }
 
 .title {
-  font-family: 'Oswald';
+  font-family: 'Oswald',  Arial, sans-serif;
   font-weight: 700;
   font-size: 75px;
   font-style: normal;
@@ -188,7 +189,7 @@ ol {
 .content__list {
   position: relative;
   overflow-x: clip;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .content__list-item:not(:first-child) {
@@ -235,14 +236,19 @@ ol {
 }
 
 .content__video-card-title{
-  font-family: 'Oswald';
+  font-family: 'Oswald', Arial, sans-serif;
   font-weight: 700;
   font-size: 30px;
   font-style: normal;
   text-transform: uppercase;
+  max-inline-size: 260px;
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  overflow: hidden;
 }
 
 .content__video-card-description {
+  max-inline-size: 200px;
   line-height: 16px;
 /* or 90% */
 }
