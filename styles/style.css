@@ -54,7 +54,6 @@ ol {
   align-items: flex-end;
   gap: 30px;
   inline-size: 1140px;
-  block-size: 534px;
   margin: 0 auto;
 }
 
@@ -188,8 +187,9 @@ ol {
 
 .content__list {
   position: relative;
-  overflow-x: clip;
+  overflow-x: auto;
   overflow-y: auto;
+  block-size: 534px;
 }
 
 .content__list-item:not(:first-child) {
