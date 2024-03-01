@@ -167,7 +167,7 @@ ol {
   display: flex;
   flex-direction: column;
   gap: 26px;
-  inline-size: 399px;
+  inline-size: 100%;
   block-size: 100%;
 
 }
